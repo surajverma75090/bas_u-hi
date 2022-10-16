@@ -1,0 +1,23 @@
+ <!-- single level inherientece -->
+<script>
+class a{
+    my1(){
+        console.log("class a"); //ClassA
+    }
+}
+class b extends a{
+    my2(){
+        console.log("class b");  //ClassB
+    }
+    my1(){
+        // super.my1()
+        console.log("class b my 1"); //ClassA
+    }
+}
+ var rec=new b
+console.log(rec);
+ rec.my1();
+ rec.my2();
+
+
+</script>

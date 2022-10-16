@@ -1,0 +1,23 @@
+<!-- promis has 3 state
+panding ,fulfull,reject-->
+
+<script>
+    var record = new Promise((res, rej) => {
+        console.log(typeof res, typeof rej);
+        res("cdac nashik")
+        // rej("cdac nashik")
+    })
+                 console.log(record);
+                    record.then((value) => {
+                    console.log(value);
+                     }).catch((value) => {
+                     console.log(error);
+                 }).finally(() => {
+        console.log("proceed for next task");
+    })
+
+
+    //handler
+
+
+</script>
